@@ -1,0 +1,22 @@
+{{define "display"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>    
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <h1>Vos données personnelles</h1>
+    <p>Nom</p>
+    <p>{{.DataForm.Nom}}</p>
+    <p>Prénom</p>
+    <p>{{.Donnee.Prenom}}</p>
+    <p>Date de anniversaire</p>
+    <p>{{.Donnee.Date}}</p>
+    <p>Sexe</p>
+    <p>{{.Donnee.Sexe}}</p>
+</body>
+{{end}}

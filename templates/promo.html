@@ -1,0 +1,27 @@
+{{define "promo"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>allo bassem? oe c greg</title>    
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <img src="/static/img/homme.png" alt="...">
+    <h1>Informations sur la promotion</h1>
+     <p>Nom : {{.Promo.NomPromo}}</p>
+     <p>Filière : {{.Promo.Filière}}</p>
+     <p>Niveau : {{.Promo.Niveau}}</p>
+     <p>Nombre d'étudiants : {{.Promo.Nombre}}</p>
+    <h1>Liste des étudiants</h1>
+    {{range .ListeEtudiants}}
+      <p>{{.Nom}}</p>
+     <p>{{.Age}}</p>
+     <p>{{.Sexe}}</p>
+     {{end}}
+
+</body>
+</html>
+{{end}}
